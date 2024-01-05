@@ -9,11 +9,24 @@
     <meta http-equiv="pragma" content="no-cache" />
     <title>Vite + Lit + TS</title>
     <link rel="stylesheet" href="./src/index.css" />
+    <script type="module" src="/src/app-navbar.ts"></script>
     <script type="module" src="/src/my-element.ts"></script>
+<script
+    src="https://jspm.dev/@spectrum-web-components/bundle/elements.js"
+    type="module" async
+></script>
+
+
   </head>
   <body>
+    <app-navbar></app-navbar>
     <my-element>
-      <h1>Dan Fredley</h1>
+      <h1>Dan Fredley1</h1>
     </my-element>
+    <sp-theme scale="large" color="dark">
+      <!-- Insert content requiring theme application here. -->
+      <sp-button onclick="alert('I was clicked');">Click me!</sp-button>
+      <!-- End content requiring theme application. -->
+    </sp-theme>
   </body>
 </html>
